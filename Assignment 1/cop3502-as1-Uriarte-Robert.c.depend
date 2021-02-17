@@ -1,0 +1,45 @@
+# depslib dependency file v1.0
+1611804979 source:c:\users\robzt\desktop\code\cop3502-as1-uriarte-robert.c\leak_detector_c.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"leak_detector_c.h"
+
+1611804881 c:\users\robzt\desktop\code\cop3502-as1-uriarte-robert.c\leak_detector_c.h
+
+1612759176 source:c:\users\robzt\desktop\code\cop3502-as1-uriarte-robert.c\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<math.h>
+	"sp21_cop3502_as1.h"
+	"leak_detector_c.h"
+
+1611800322 c:\users\robzt\desktop\code\cop3502-as1-uriarte-robert.c\sp21_cop3502_as1.h
+
+1612759176 source:c:\users\robzt\desktop\code\assignment 1\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<math.h>
+	"sp21_cop3502_as1.h"
+	"leak_detector_c.h"
+
+1611800322 c:\users\robzt\desktop\code\assignment 1\sp21_cop3502_as1.h
+
+1611804881 c:\users\robzt\desktop\code\assignment 1\leak_detector_c.h
+
+1612824527 source:c:\users\robzt\desktop\code\assignment 1\leak_detector_c.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"leak_detector_c.h"
+
+1612917155 source:c:\users\robzt\desktop\code\assignment 1\cop3502-as1-uriarte-robert.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<math.h>
+	"sp21_cop3502_as1.h"
+	"leak_detector_c.h"
+
