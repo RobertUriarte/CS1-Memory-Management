@@ -5,7 +5,6 @@
 #include "sp21_cop3502_as1.h"
 #include "leak_detector_c.h"
 
-//Credit Professor Gerber
 void remove_crlf(char *s)
 {
     char *t = s + strlen(s);
@@ -19,7 +18,6 @@ void remove_crlf(char *s)
     }
 }
 
-// Credit Professor Gerber
 int get_next_nonblank_line(FILE *ifp, char *buf, int max_length)
 {
     buf[0] = '\0';
@@ -105,7 +103,6 @@ void print_monster_dparray(monster **array, int total_monsters)
     }
 }
 
-//Credit Professor Gerber for function idea. Frees pointer elements in the monster structure
 void dispose_monster(monster *p)
 {
     free(p->name);
@@ -113,7 +110,6 @@ void dispose_monster(monster *p)
     free(p);
 }
 
-//Credit Professor Gerber for function idea. Frees the monster structures and the double pointer array.
 void dispose_all_monster_data(monster **array, int total_monsters)
 {
     for(int i = 0; i < total_monsters; i++)
@@ -138,7 +134,6 @@ region *new_region(char* namebuffer, int nmonsters, int total_population, monste
     return ptr;
 }
 
-//Creates a region double pointer array filled with region structures
 region **new_region_dparray(FILE *ifp, char* buf, int total_regions, monster **monsters_index, int total_monsters) {
 
     char namebuf[256];
@@ -184,7 +179,6 @@ region **new_region_dparray(FILE *ifp, char* buf, int total_regions, monster **m
     return rarray;
 }
 
-//Credit Professor Gerber for function idea. Frees region elements in the region structure
 void dispose_region(region *ptr)
 {
     free(ptr->name);
@@ -192,7 +186,6 @@ void dispose_region(region *ptr)
     free(ptr);
 }
 
-//Credit Professor Gerber for function idea. Frees the region structures and the double pointer array.
 void dispose_all_region_data(region **rarray, int total_regions)
 {
     for(int i = 0; i < total_regions; i++)
@@ -260,14 +253,13 @@ itinerary **new_itinerary_dparray(FILE *ifp, char*buf, int total_trainers, int t
     return itarray;
 }
 
-//Credit Professor Gerber for function idea. Frees itinerary elements in the itinerary structure
 void dispose_itinerary(itinerary *ptr2)
 {
     free(ptr2->regions);
     free(ptr2);
 }
 
-//Credit Professor Gerber for function idea. Frees the itinerary structures and the double pointer array.
+//Frees the itinerary structures and the double pointer array.
 void dispose_all_itinerary_data(itinerary **itarray, int total_trainers)
 {
     for(int i = 0; i < total_trainers; i++)
@@ -316,7 +308,7 @@ trainer **new_trainer_dparray(FILE *ifp, char*buf, int total_trainers, itinerary
     return tarray;
 }
 
-//Credit Professor Gerber for function idea. Frees trainer elements in the trainer structure
+//Frees trainer elements in the trainer structure
 void dispose_trainer(trainer *ptr3)
 {
     free(ptr3->name);
@@ -324,7 +316,7 @@ void dispose_trainer(trainer *ptr3)
     free(ptr3);
 }
 
-//Credit Professor Gerber for function idea. Frees the trainer structures and the double pointer array.
+//Frees the trainer structures and the double pointer array.
 void dispose_all_trainer_data(trainer **tarray, int total_trainers)
 {
     for(int i = 0; i < total_trainers; i++)
@@ -360,7 +352,7 @@ void print_output(FILE* ofp, int total_trainers, trainer** trainers_index) {
     }
 }
 
-//Credit Professor Gerber for function idea. Frees the trainer name double pointer array.
+//Frees the trainer name double pointer array.
 void dispose_trainer_names(char **trainer_names, int total_trainers)
 {
     for(int i = 0; i < total_trainers; i++)
